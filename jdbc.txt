@@ -10,3 +10,5 @@ JDBC (Java Database Connectivity) : 자바와 데이터베이스의 상호 연�
     4) 3번에서 얻어낸 커넥션을 통해 Date를 가져올 수 있게 됨
     5) ResultSet 객체(결과 행들을 담기 위한 객체) 사용
         
+- ~~~~DAO(ex- EmpDAO ,DeptDAO) 클래스 : DB CRUD 작업과 관련된 메소드 작성
+- ~~~~DTO(ex- EmpDTO, DeptDTO) 클래스 : 클래스들끼리 데이터를 주고 받을 때 사용하는 클래스
