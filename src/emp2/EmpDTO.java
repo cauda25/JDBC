@@ -16,6 +16,15 @@ public class EmpDTO {
     private int deptno;
 
     // 생성자/getter/setter/toString
+    public EmpDTO() {
+
+    }
+
+    // public EmpDTO(int comm, int sal, int empno) {
+    // this.comm = comm;
+    // this.sal = sal;
+    // this.empno = empno;
+    // }
 
     public EmpDTO(int empno, String ename, String jod, int mgr, String hiredate, int sal, int comm, int deptno) {
         this.empno = empno;

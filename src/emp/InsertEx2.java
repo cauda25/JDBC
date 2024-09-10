@@ -46,7 +46,8 @@ public class InsertEx2 {
 
             // 4. insert 작업
             // 4-1. 실행할 sql 구문 작성
-            String sql = "INSERT INTO EXAM_EMP VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO EXAM_EMP (empno, ename, job, mgr, hiredate, sal, comm, deptno) ";
+            sql += " VALUES(?,?,?,?,?,?,?,?)";
 
             // 4-2. sql 구문 전송
             pstmt = con.prepareStatement(sql);
@@ -64,7 +65,6 @@ public class InsertEx2 {
             // 4-3. sql 구문 실행 후 결과 받기
             // excuteUpdate() : insert, delete, update
             int result = pstmt.executeUpdate();
-            sql += "VALUES(?,?,?,?,?,?,?,?)";
 
             if (result > 0) {
                 System.out.println("입력 성공");
